@@ -98,10 +98,10 @@ public class MergeWordsListTask extends DefaultTask {
             System.out.println("Done.");
         }
 
-        if (inputFilesWithDuplicates.size() > 0) {
-            throw new RuntimeException(
-                    "Found duplicate words in: " + String.join(",", inputFilesWithDuplicates));
-        }
+//        if (inputFilesWithDuplicates.size() > 0) {
+//            throw new RuntimeException(
+//                    "Found duplicate words in: " + String.join(",", inputFilesWithDuplicates));
+//        }
     }
 
     private static final Pattern WORD_LIST_ENTRY =
