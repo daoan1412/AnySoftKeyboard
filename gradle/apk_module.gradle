@@ -72,9 +72,9 @@ android {
         release {
             if (keystoreFile.exists()) {
                 storeFile keystoreFile
-                storePassword System.getenv("KEY_STORE_FILE_PASSWORD")
-                keyAlias getExtValue(project, 'override_release_key_alias', 'packs')
-                keyPassword System.getenv("KEY_STORE_FILE_DEFAULT_ALIAS_PASSWORD")
+                storePassword '791137'
+                keyAlias 'upload'
+                keyPassword '791137'
                 println "Using '${storeFile.absolutePath}' to release APK ${path} (with alias '${keyAlias}')."
             } else {
                 println "Could not find '${keystoreFile.absolutePath}' file. Release APK will not be signed."
